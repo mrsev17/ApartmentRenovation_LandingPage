@@ -1,2 +1,79 @@
 @import "variables";
 
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 1200px;
+}
+.navbar-brand {
+  margin-right: 30px;
+}
+.nav-link {
+  color: $accent-black;
+  font-size: $link-font-size;
+  transition: ease-in-out .5s;
+  cursor: pointer;
+  &:hover {
+    color: $blue-one-color;
+    transition: .7s;
+  }
+}
+.btn {
+  padding: 10px 24px;
+  border: 1px solid $green-color;
+  color: $green-color;
+  transition: ease-in-out .5s;
+  &:hover {
+    transition: .7s;
+    background-color: $green-color;
+    border: 1px solid $green-color;
+  }
+}
+.btn-drop {
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: $accent-black;
+  outline: none;
+  &:active,
+  &:focus,
+  &:focus-visible {
+    box-shadow: none !important;
+    outline: none !important;
+    border: 1px solid transparent !important;
+    color: $accent-black !important;
+    background-color: transparent !important;
+  }
+  &:hover {
+    color: $green-color;
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+}
+.dropdown > button {
+  &::after {
+    display: none;
+  }
+}
+.dropdown-menu {
+  box-shadow: 0 0 10px rgba(190, 190, 190, 0.25);
+  border: none;
+  width: 100%;
+  margin: 16px 0 0 !important;
+  li {
+    margin: 12px;
+
+  }
+}
+.dropdown-item {
+  border: 1px solid $green-color;
+  border-radius: 6px;
+}
+.navbar-toggler {
+  border: 1px solid $green-color;
+  background-color: $green-color;
+}
+.navbar-toggler-icon {
+  color: $green-color;
+}

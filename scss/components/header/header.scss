@@ -1,4 +1,25 @@
-h1 {
-  color: brown;
-  font-family: "Roboto", sans-serif;
+.header {
+  margin-top: 20px;
+  &__contacts-up {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &__contacts-down > span {
+    font-size: 14px;
+    color: $accent-black;
+  }
+  &__options-line {
+    border-top: 1px solid $green-color;
+    border-bottom: 1px solid $green-color;
+  }
+  &__options-line {
+    margin-top: 12px;
+  }
+  .dropdown-menu,
+  .header__another-link {
+    padding: 8px 0;
+  }
+  &__form {
+    gap: 30px;
+  }
 }
