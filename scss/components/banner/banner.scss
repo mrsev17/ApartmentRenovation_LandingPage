@@ -1,0 +1,190 @@
+.banner {
+  margin-top: 33px;
+  background: url("../assets/images/banner-background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  min-height: 719px;
+  max-height: 719px;
+  &__main-title {
+    margin-top: 30px;
+    h1 {
+      max-width: 590px;
+      font-weight: 700;
+      font-size: 60px;
+    }
+  }
+  &__subs-for-title {
+    margin-top: 30px;
+    p {
+      font-size: 44px;
+      font-weight: 700;
+      span {
+        background-color: $green-color;
+        border-radius: 10px;
+        color: $smoke-white;
+        padding: 0 6px;
+      }
+    }
+  }
+  &__advantages {
+    max-width: 450px;
+    flex-wrap: wrap;
+    margin-top: 75px;
+    gap: 50px;
+    p {
+      max-width: 211px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+  &__advantages-one,
+  &__advantages-two,
+  &__advantages-three,
+  &__advantages-four {
+    width: 150px;
+  }
+  &__calculator-wrapper {
+    background-color: $smoke-white;
+    border-radius: 7px;
+  }
+  &__main-case-calculator {
+    padding: 38px 54px;
+  }
+  &__calculator-title {
+    margin-top: 10px;
+    h3 {
+      font-weight: 900;
+      font-size: 20px;
+    }
+  }
+  &__calculator-type-sub {
+    margin-top: 20px;
+    p {
+      color: #595959;
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+  &__calculator-type-options {
+    gap: 44px;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  /* ===== Radio ===== */
+  .container-calc {
+    display: flex;
+    p {
+      font-size: 14px;
+    }
+  }
+  .container-calc {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default radio button */
+  .container-calc input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    border: 2px solid #cccccc;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container-calc:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  .container-calc input:checked ~ .checkmark {
+    background-color: $blue-one-color;
+  }
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+  .container-calc input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the indicator (dot/circle) */
+  .container-calc .checkmark:after {
+    top: 3px;
+    left:3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $blue-one-color;
+    border: 1px solid white;
+  }
+
+
+  &__calculator-line {
+    border: 1px solid #cccccc;
+  }
+  &__calculator-type-area {
+    width: 85%;
+  }
+  &__calc-square {
+    //width: 374px;
+    border-radius: 10px;
+  }
+  &__calc-square {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  &__calc-square:hover {
+    opacity: 1;
+  }
+
+  &__calc-square::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: $blue-one-color;
+    cursor: pointer;
+  }
+
+  &__calc-square::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: $blue-one-color;
+    cursor: pointer;
+  }
+
+}
