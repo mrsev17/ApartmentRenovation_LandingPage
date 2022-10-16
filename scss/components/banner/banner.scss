@@ -4,8 +4,8 @@
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100%;
-  min-height: 719px;
-  max-height: 719px;
+  min-height: 840px;
+  max-height: 840px;
   &__main-title {
     margin-top: 30px;
     h1 {
@@ -148,7 +148,7 @@
     border: 1px solid #cccccc;
   }
   &__calculator-type-area {
-    width: 85%;
+    width: 100%;
   }
   &__calc-square {
     //width: 374px;
@@ -187,4 +187,66 @@
     cursor: pointer;
   }
 
+  &__calculator-discount-time {
+    margin-top: 30px;
+    background-color: #d3d3d3;
+    padding: 12px 0;
+    position: relative;
+    &:after {
+      display: block;
+      content: "";
+      background-color: #d3d3d3;
+      position: absolute;
+      top: 0;
+      left: -54px;
+      height: 100%;
+      width: 54px;
+    }
+    &:before {
+      display: block;
+      content: "";
+      background-color: #d3d3d3;
+      position: absolute;
+      top: 0;
+      right: -54px;
+      height: 100%;
+      width: 54px;
+    }
+  }
+  &__calculator-time-descr {
+    font-size: 16px;
+    color: $blue-one-color;
+  }
+  &__calculator-time-bottom {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2d4872;
+
+  }
+  &__calculator-get-contact-user {
+    margin-top: 30px;
+  }
+  &__calculator-get-contact-description {
+    p {
+      font-weight: 700;
+      color: $blue-one-color;
+    }
+  }
+  &__calculator-form-contact > form > input {
+    padding: 6px;
+    width: 100%;
+    max-width: 240px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+  }
+  &__calculator-form-contact > form > button {
+    border: 1px solid $green-color;
+    background-color: $green-color;
+    color: White;
+    font-size: 18px;
+    font-weight: 700;
+    width: 30%;
+    border-radius: 4px;
+  }
 }

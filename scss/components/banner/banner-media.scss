@@ -1,0 +1,73 @@
+@media (max-width: 1120px) {
+  .banner {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__right-side {
+      width: 100%;
+    }
+    &__left-side {
+      align-items: center;
+      flex-direction: column;
+      display: flex;
+    }
+    &__advantages {
+      flex-wrap: nowrap;
+      gap: 10px;
+    }
+    &__main-title > h1,
+    &__subs-for-title {
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 488px) {
+  .banner {
+    &__advantages {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__advantages-one,
+    &__advantages-two,
+    &__advantages-three,
+    &__advantages-four {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__advantages-sub {
+      p {
+        text-align: center;
+      }
+    }
+    &__calculator-form-contact > form {
+      flex-direction: column;
+      input {
+        max-width: none;
+      }
+      button {
+        margin-top: 10px;
+        padding: 6px;
+        width: 100%;
+      }
+    }
+    &__calculator-type-work,
+    &__calculator-type-properties,
+    &__calculator-type-quantity {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__calc-square {
+      width: 100%;
+      min-width: 230px;
+    }
+    &__calculator-get-contact-description {
+      text-align: center;
+    }
+    &__calculator-title {
+      text-align: center;
+    }
+  }
+}
